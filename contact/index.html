@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <h1>Contact<h1>
 </head>
+
 <body>
+  <h1>Contact</h1>
+
     <nav class="menu">
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../projects/index.html">Projects</a></li>
-            <li><a href="index.html">Contact</a></li>
+            <li><a href="index.html" class="current">Contact</a></li>
             <li><a href="https://github.com/n-otu" target="_blank">GitHub</a></li>
             <li><a href="../resume/index.html">Resume</a></li>
         </ul>
-    <nav>
+      </nav>
 
-    <form action="mailto:nonyo@mit.edu" method="POST" enctype="text/plain">
+    <form class="contact-form" action="mailto:nonyo@mit.edu" method="POST" enctype="text/plain">
 
-        <div class="form-example">
             <label for="email">Email: </label>
             <input type="email" name="email" id="email" required />
-          </div>
 
-          <div class="subject">
             <label for="subject">Subject: </label>
-            <input  name="subject" required/>
-          </div>
+            <input type="text" name="subject" id="subject" required/>
 
-          <label for="body">Body</label>
-          <textarea id="body" name="body" required>
-          </textarea>
+            <label for="body">Body: </label>
+            <textarea id="body" name="body" required></textarea>
+
 
           <button type="submit">Submit</button>
     </form>
 </body>
+
 </html>
-
-
-<!-- <nav class="menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav> -->
