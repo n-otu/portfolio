@@ -111,4 +111,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .resume h2 {
   color: rgb(149, 5, 5);
+  border-bottom-width: 0.1em;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+
+}
+
+.resume h3 {
+  color: rgb(79, 63, 63);
+}
+
+.resume h4 {
+  color: rgb(120, 12, 12);
 }
