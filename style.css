@@ -23,6 +23,7 @@ nav {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: oklch(80% 3% 200);
+    --border-color: oklch(50% 10% 200 / 40%);
   }
 
 nav ul li a {
@@ -36,7 +37,7 @@ nav ul li a {
 nav ul li a.current {
   border-bottom-width: 0.4em;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
   padding-bottom: 0.25em;
 }
 
@@ -49,7 +50,7 @@ nav ul li a:hover {
   border-bottom-style: solid;
   border-bottom-color: var(--color-accent);
   padding-bottom: 0.1em;
-  background-color: oklch(from var(--color-accent) 95% 5% 0)
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 input, textarea, button {
@@ -124,4 +125,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .resume h4 {
   color: rgb(120, 12, 12);
+}
+
+html {
+  color-scheme: light dark;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  display: inline-flex;
+  gap: 4px;
+  font: 80%/1.5 system-ui;   /* set size and inherit system os font */
 }
