@@ -81,6 +81,9 @@ form button {
 img {
   max-width: 100%;
   height: auto; /* Maintain aspect ratio */
+  border-color: var(--color-accent);
+  border-style:inset;
+  border-width: .2em;
 }
 
 .projects {
