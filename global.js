@@ -80,3 +80,19 @@ select.addEventListener("input", function (event) {
     localStorage.colorScheme = event.target.value; // save color scheme preference
 
 });
+
+// improving contact form functionality
+
+let form = document.querySelector(".contact-form");
+
+form?.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let data = new FormData(form);
+
+    let url = form.action + "?";
+    for (let [name, value] of data) {
+        url += (name + "=" + value + "&")
+        console.log(name, value);
+    }
+    location.href = url;
+});
