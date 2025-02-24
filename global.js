@@ -39,7 +39,7 @@ for (let p of pages) {
     a.href = url;
     a.textContent = title;
 
-    li.appendChild(a); // Append A to LI
+    li.appendChild(a); // append a to li
     ul.appendChild(li)
 
 
